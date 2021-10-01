@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/*adding in fonts*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+/*making the menue icons horizontal*/
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+/*what ever paragraphs i write will be thew ame color as the a ancor */
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*aadjustiing image on home screen*/
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+/*adjusting h1 font sizing*/
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+/*giving the Explore button life*/
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/*making it so the explore button will change colors when you hover over it*/
+.btn:hover{
+    background: gray;
+}
+
+.header{
+    background: radial-gradient(white,green);
+}
+.header .row{
+    margin-top: 70px;
+}
+
+/*Making categories*/
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%; /*makes each of the colums occupie 30 %*/
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/*making the products*/
+.col-4{
+    flex-basis: 23%; /*Making flex-basis 23% because i need 4 colums I coulndt get them to fit setting it at 25% */
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s; /*Making the objects bump up when moused over*/
+}
+.col-4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+/*decorating the price*/
+.col-4 p{
+    font-size: 13px;
+}
+/*changing ratings color*/
+.rating .fa{
+    color: green;
+}
+
+/*Making the objects bump up when moused over*/
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+/*making the offer section*/
+.offer{
+    background: radial-gradient(white,green);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+}
+small{
+    color: #555;
+}
+
+/*<!------------------------------------------testimonial------------------------------------------>*/
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 18px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover{ /*making it so the user review moves up when moused over*/
+    transform: translateY(-10px);
+}
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: green;
+}
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: gray;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: gray;
+    font-size: 16px;
+}
+
+/* <!------------------------------------------Brands------------------------------------------> */
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%); /*Making logos grey*/
+}
+.col-5 img:hover{
+    filter:grayscale(0) /*adding color back after hoverd over*/
+}
+
+/* <!------------------------------------------footer------------------------------------------> */
+.footer{
+    background: teal;
+    color: black;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+/*removing bullet points on the reasources list*/
+ul{
+    list-style-type: none;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    margin-top: 2px;
+    display: none;
+}
+
+/*-----------------------------Products Page------------------------------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid black;
+    padding: 5px;
+}
+/*-----------------------------Products Page button------------------------------*/
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: grey;
+    color: black;
+}
+
+/*-----------------------------Single Product Details------------------------------*/
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+/* <!------------------------------------------Cart Items Details------------------------------------------> */
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    background: rgb(67, 230, 67);
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: red;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/*-----------------------------Media Query for 800px-------------------------------*/
+@media only screen and (max-width :800px){
+    nav ul{
+        position: absolute;
+        top: 85px;
+        left: 0;
+        background: green;
+        width: 100%;
+        overflow: hidden;
+         transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: aquamarine;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+} /*end of media 800px*/
+
+/*-----------------------------Media Queryfor less than 600px-------------------------------*/
+@media only screen and (max-width :800px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+
+}
+
+
